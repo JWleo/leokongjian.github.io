@@ -3,26 +3,44 @@
 
 @import "{{ site.theme }}";
 
+/* ORNL 深色背景 + 背景图 */
 body {
   background-color: {{ site.ornl_theme.primary_bg }};
+  background-image: url('{{ "/assets/img/background.jpg" | relative_url }}');
+  background-size: cover;          /* 铺满屏幕 */
+  background-position: center;     /* 居中 */
+  background-attachment: fixed;    /* 固定背景，滚动时不动 */
+  background-repeat: no-repeat;    /* 不重复 */
   color: {{ site.ornl_theme.primary_fg }};
 }
 
+/* 内容区域半透明，让背景图透出来 */
+.page-content {
+  background: rgba(0, 0, 0, 0.55);  /* 半透明黑色 */
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+/* 顶部导航栏 */
+.site-header {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: {{ site.ornl_theme.nav_fg }};
+  border-bottom: 2px solid {{ site.ornl_theme.accent_green }};
+  padding: 1rem 0;
+}
+
+/* 页脚 */
+.site-footer {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: {{ site.ornl_theme.footer_fg }};
+  padding: 1rem 0;
+}
+
+/* 链接颜色 */
 a {
   color: {{ site.ornl_theme.accent_green }};
 }
 
 a:hover {
   color: {{ site.ornl_theme.accent_yellow }};
-}
-
-.site-header {
-  background-color: {{ site.ornl_theme.nav_bg }};
-  color: {{ site.ornl_theme.nav_fg }};
-  border-bottom: 2px solid {{ site.ornl_theme.accent_green }};
-}
-
-.site-footer {
-  background-color: {{ site.ornl_theme.footer_bg }};
-  color: {{ site.ornl_theme.footer_fg }};
 }
