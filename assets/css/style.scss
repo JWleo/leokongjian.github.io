@@ -1,0 +1,30 @@
+---
+# 这段 front matter 必须保留
+---
+
+@import "{{ site.theme }}";
+
+body {
+  background-color: {{ site.ornl_theme.primary_bg }};
+  color: {{ site.ornl_theme.primary_fg }};
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.site-header {
+  background-color: {{ site.ornl_theme.nav_bg }};
+  color: {{ site.ornl_theme.nav_fg }};
+  border-bottom: 2px solid {{ site.ornl_theme.accent_green }};
+}
+
+a {
+  color: {{ site.ornl_theme.accent_green }};
+}
+
+a:hover {
+  color: {{ site.ornl_theme.accent_yellow }};
+}
+
+.site-footer {
+  background-color: {{ site.ornl_theme.footer_bg }};
+  color: {{ site.ornl_theme.footer_fg }};
+}
