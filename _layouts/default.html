@@ -2,21 +2,44 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>{{ page.title }} - {{ site.title }}</title>
+
+  <!-- 自定义 ORNL 风格 CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <!-- SEO -->
+  {% seo %}
 </head>
+
 <body>
 
+  <!-- 顶部导航栏 -->
   <header class="site-header">
-    <h1>{{ site.title }}</h1>
+    <div class="container">
+      <h1 class="site-title">{{ site.title }}</h1>
+
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}">首页</a>
+        <a href="{{ '/research' | relative_url }}">研究方向</a>
+        <a href="{{ '/projects' | relative_url }}">项目</a>
+        <a href="{{ '/publications' | relative_url }}">论文</a>
+        <a href="{{ '/contact' | relative_url }}">联系</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="page-content">
+  <!-- 主体内容 -->
+  <main class="page-content container">
     {{ content }}
   </main>
 
+  <!-- 页脚 -->
   <footer class="site-footer">
-    <p>© {{ site.time | date: "%Y" }} GraphRAG Lab</p>
+    <div class="container">
+      <p>© {{ site.time | date: "%Y" }} {{ site.title }} — ORNL 风格科研站点</p>
+    </div>
   </footer>
 
 </body>
