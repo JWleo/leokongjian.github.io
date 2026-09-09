@@ -1,0 +1,80 @@
+# _config.yml
+title: "GraphRAG Lab"
+description: "Research, Retrieval-Augmented Generation, and Knowledge Graphs."
+url: "https://username.github.io"
+baseurl: ""
+
+# 使用 GitHub Pages 官方支持的主题（方便托管），再通过自定义 CSS 改成 ORNL 风格
+theme: minima
+# 或者：
+# remote_theme: pages-themes/cayman@v0.2.0
+
+# 站点作者信息
+author:
+  name: "GraphRAG Research Group"
+  email: "contact@example.com"
+
+# 导航栏配置
+header_pages:
+  - index.md
+  - research.md
+  - projects.md
+  - publications.md
+  - contact.md
+
+# Markdown & 高亮
+markdown: kramdown
+highlighter: rouge
+
+# 语言与编码
+encoding: "utf-8"
+timezone: "America/Los_Angeles"
+
+# 自定义样式（关键：用它来做 ORNL 风格）
+# 在 /assets/css/style.scss 中覆盖主题默认样式
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+# 站点配色（供你在 CSS 中引用）
+ornl_theme:
+  primary_bg: "#0b1b2b"      # 深蓝黑背景
+  primary_fg: "#ffffff"      # 文字白
+  accent_green: "#6bbf59"    # ORNL 风格的绿色点缀
+  accent_yellow: "#f4c542"   # 次要强调色
+  nav_bg: "#081320"
+  nav_fg: "#ffffff"
+  footer_bg: "#050b12"
+  footer_fg: "#cccccc"
+
+# 社交 / 链接
+github_username: "username"
+linkedin_username: "your-linkedin"
+twitter_username: "your-twitter"
+
+# 构建设置
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# SEO 基本信息
+seo:
+  type: "website"
+  name: "GraphRAG Lab"
+  twitter:
+    card: "summary_large_image"
+
+# 默认布局
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
