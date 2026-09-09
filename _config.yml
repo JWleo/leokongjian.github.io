@@ -1,12 +1,12 @@
 # _config.yml
 title: "GraphRAG Lab"
 description: "Research, Retrieval-Augmented Generation, and Knowledge Graphs."
-url: "https://username.github.io"
+url: "https://leokongjian.github.io"
 baseurl: ""
 
 # 使用 GitHub Pages 官方支持的主题（方便托管），再通过自定义 CSS 改成 ORNL 风格
 theme: minima
-# 或者：
+# 如果要用远程主题，可以改成：
 # remote_theme: pages-themes/cayman@v0.2.0
 
 # 站点作者信息
@@ -28,19 +28,18 @@ highlighter: rouge
 
 # 语言与编码
 encoding: "utf-8"
-timezone: "America/Los_Angeles"
+timezone: "Asia/Shanghai"
 
-# 自定义样式（关键：用它来做 ORNL 风格）
-# 在 /assets/css/style.scss 中覆盖主题默认样式
+# ✅ 关键：启用 SASS 编译
 sass:
   sass_dir: assets/css
   style: compressed
 
-# 站点配色（供你在 CSS 中引用）
+# ORNL 风格配色（供 style.scss 引用）
 ornl_theme:
   primary_bg: "#0b1b2b"      # 深蓝黑背景
-  primary_fg: "#ffffff"      # 文字白
-  accent_green: "#6bbf59"    # ORNL 风格的绿色点缀
+  primary_fg: "#ffffff"      # 白色文字
+  accent_green: "#6bbf59"    # ORNL 绿色点缀
   accent_yellow: "#f4c542"   # 次要强调色
   nav_bg: "#081320"
   nav_fg: "#ffffff"
@@ -48,7 +47,7 @@ ornl_theme:
   footer_fg: "#cccccc"
 
 # 社交 / 链接
-github_username: "username"
+github_username: "JWleo"
 linkedin_username: "your-linkedin"
 twitter_username: "your-twitter"
 
