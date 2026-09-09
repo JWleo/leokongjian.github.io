@@ -1,8 +1,8 @@
 # _config.yml
 title: "GraphRAG Lab"
 description: "Research, Retrieval-Augmented Generation, and Knowledge Graphs."
-url: "https://leokongjian.github.io"
-baseurl: ""
+url: "https://jwleo.github.io"
+baseurl: "/leokongjian.github.io"
 
 # 使用 GitHub Pages 官方支持的主题（方便托管），再通过自定义 CSS 改成 ORNL 风格
 theme: minima
@@ -12,7 +12,6 @@ theme: minima
 # 站点作者信息
 author:
   name: "GraphRAG Research Group"
-  email: "contact@example.com"
 
 # 导航栏配置
 header_pages:
@@ -48,8 +47,6 @@ ornl_theme:
 
 # 社交 / 链接
 github_username: "JWleo"
-linkedin_username: "your-linkedin"
-twitter_username: "your-twitter"
 
 # 构建设置
 plugins:

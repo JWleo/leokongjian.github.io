@@ -41,8 +41,9 @@ title: "GraphRAG Lab"
 - 两阶段搜索  
 - 端到端回答生成  
 
-👉 代码仓库：  
-[GraphRAG Demo](https://github.com/username/graphrag-demo)
+👉 相关代码与实验：
+
+[访问 GitHub 项目主页](https://github.com/JWleo)
 
 ---
 
@@ -77,8 +78,7 @@ title: "GraphRAG Lab"
 
 如需合作、咨询或技术交流：
 
-**Email:** contact@example.com  
-**GitHub:** https://github.com/username
+**GitHub:** [github.com/JWleo](https://github.com/JWleo)
 
 ---
 
